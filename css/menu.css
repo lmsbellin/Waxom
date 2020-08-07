@@ -1,0 +1,208 @@
+.header {
+	width: 100%;
+	line-height: 10px;
+}
+
+.logo {
+	float: left;
+}
+
+.menu {
+	margin-top: 20px;
+}
+
+.arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle
+}
+
+.arrow.down {
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent
+}
+
+.arrow.up {
+	border-bottom: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent
+}
+
+nav {
+	width: 100%;
+}
+
+nav .navbar {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto
+}
+
+nav a {
+	color: #fff
+}
+
+nav .logo {
+	float: left;
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold
+}
+
+nav .menu-toggle {
+	cursor: pointer;
+	display: none;
+	float: right;
+	padding: 12px;
+	margin: 10px 0;
+	transition: .5s
+}
+
+nav .icon-bar {
+	background-color: #fff;
+	display: block;
+	width: 22px;
+	height: 2px
+}
+
+nav .icon-bar + .icon-bar {
+	margin-top: 4px
+}
+
+nav .menu ul {
+	float: right
+}
+
+nav .menu li {
+	float: left;
+	list-style: none;
+}
+
+nav .menu li:first-child {
+	border-left: 0
+}
+
+nav .menu li a,
+nav .open-submenu {
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	padding: 12px 20px;
+	transition: background-color .3s;
+
+}
+
+nav .menu li a:hover,
+nav .open-submenu:hover,
+nav .open-submenu.active,
+nav .menu-toggle.active {
+
+	transition: background-color .5s
+}
+
+nav .menu ul ul {
+	z-index: 100;
+	display: none;
+	float: none;
+	position: absolute;
+}
+
+nav .menu ul ul li {
+	float: none;
+	border: 0
+}
+
+nav .menu ul ul a:hover {
+	background: ;
+	transition: background-color .3s
+}
+
+.header1 {
+
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+
+
+}
+
+.header1 nav {
+	background: rgba(22, 21, 19, .7);
+	height: 80px;
+}
+
+
+/*media query open*/
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+	nav .logo {
+		padding-top: 8px
+	}
+
+	nav .menu-toggle {
+		display: inline-block;
+		margin-right: -25px;
+	}
+
+	nav .menu {
+		clear: both;
+		margin-left: -20px;
+		width: 100%;
+		margin-top: 15px;
+		display: none;
+	}
+
+	nav .menu > ul {
+		float: none
+	}
+
+	nav .menu li {
+		width: 100%;
+		border: 0;
+		display: block;
+	}
+
+	nav .menu li:last-child {
+		margin: 0 0 15px 0
+	}
+
+	nav .menu li a,
+	nav .open-submenu {
+		display: block;
+		background: #000;
+		color: #fff;
+		background: rgba(22, 21, 19, .2);
+		padding: 10px;
+		margin: 2px 0 0 0;
+		text-align: center;
+	}
+
+	nav .menu ul ul {
+		position: static;
+		background: transparent;
+		display: none
+	}
+
+	nav .menu ul ul a {
+		background: transparent
+	}
+
+	nav .menu ul ul a:hover {
+
+		text-decoration: underline;
+	}
+
+	.header1 {
+		display: none;
+	}
+
+	.header1 nav {
+		display: none;
+	}
